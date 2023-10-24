@@ -4,9 +4,58 @@
 
     <head>
       <meta name="viewport" content="width=device-width">
-      <title><My First GitHub page></title>
+      <title><My Stylin with CSS></title>
       <style>
-        Here's some CSS that will add a bit of style to our table
+
+        html{
+          background-color: #ccc;
+        }
+        
+        body {
+          font-family:'Courier New';
+          max-width:960px;
+          width:90%;
+          background-color: #fff;
+          margin:auto;
+          padding:1%;
+        }
+
+        /* start nav rules */
+nav{
+   text-align:center; /* centers the nav */
+}
+
+
+nav a{
+   color:#000; /* font color is black */
+}
+
+
+nav ul {
+   list-style:none; /* removes the bullets */
+}
+nav li
+{
+   display:inline-block; /* makes <li> horizontal, but able to declare margins */
+   margin:0 2%; /* margin left-right, gets smaller as necessary */
+}
+nav a:hover{
+   text-decoration: none; /* default underline goes away on hover */
+}
+/* end nav rules */
+
+          
+        footer{
+          text-align:center;
+          clear:both;
+          
+        }
+
+        
+
+
+
+
 
        table.my-table {
          border-collapse: collapse;
@@ -40,7 +89,17 @@
       </style>
     </head>
     <body>
-      <h1>HTML Elements</h1>
+      <h1>Stylin with CSS</h1>
+      <nav>
+        <ul>
+          <li><a href="#">link 1</a></li>
+          <li><a href="#">link 2</a></li>
+          <li><a href="#">link 3</a></li>
+          <li><a href="#">link 4</a></li>
+          <li><a href="#">link 5</a></li>
+        </ul>
+      </nav>
+
       <p>Clever content goes here</p>
       <p>Clever content goes here</p>
       <p>Clever content goes here</p>
@@ -78,11 +137,15 @@
           <td>Doe</td>
           <td>Jill@example.com</td>
         </tr>
-        <tr> </html> 
+        <tr>  
           <td>Judy</td>
           <td>Doe</td>
           <td>John@example.com</td>
         </tr>
       </table>
+      <footer>Copyright &copy; 2023</footer>
     </body>
+
+
+    </html>
 
